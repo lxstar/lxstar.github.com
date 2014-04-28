@@ -1,4 +1,7 @@
 encoding: utf-8
-name: gh0star's blog
+name: lxstar's blog
 markdown: redcarpet
 pygments: true
+
+url:
+baseurl:

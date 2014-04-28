@@ -3,23 +3,27 @@
 <head>
   <meta charset="utf-8">
   <title>{{ page.title }}</title>
-  <link rel="stylesheet" type="text/css" href="static/css/default.css"></head>
+  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/static/css/default.css">
+  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/static/css/syntax.css"></head>
 <body>
   <div id='container'>
     <header>
-      <div id='logo'>Gh0star's Blog</div>
+      <div id='logo'>Lxstar's Blog</div>
       <nav>
         <ul>
-          <li class="current">
+          <li {% if page.url == '/index.html' %}class='current'{% endif %}>
             <a href="/">Home</a>
           </li>
-          <li>
+          <li {% if page.url == '/posts/index.html' %}class='current'{% endif %}>
             <a href="/posts">Posts</a>
           </li>
-          <li>
+          <li {% if page.url == '/books/index.html' %}class='current'{% endif %}>
             <a href="/books">Books</a>
           </li>
-          <li>
+          <li {% if page.url == '/say/index.html' %}class='current'{% endif %}>
+            <a href="/say">Say</a>
+          </li>
+          <li {% if page.url == '/about/index.html' %}class='current'{% endif %}>
             <a href="/about">About</a>
           </li>
         </ul>
@@ -32,6 +36,5 @@
       <p>Build by Jekyll. Power by Github Pages</p>
     </footer>
   </div>
-
 </body>
 </html>

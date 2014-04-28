@@ -1,0 +1,11 @@
+---
+layout: default
+title: Posts
+---
+<div class='cleaner'></div>
+<div id='page'>
+	{% for post in site.posts %}
+<!-- 		<a target='_blank' href='{{ post.url }}'>{{ post.title }} -- {{ post.date }}</a><br> -->
+	{{ post }}
+	{% endfor %}
+</div>
