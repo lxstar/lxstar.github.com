@@ -63,7 +63,7 @@ text-decoration:underline;
 clear:both;
 width:600px;
 font-size:1px;
-height:20px;
+height:30px;
 }
 
 /*Global styles */
@@ -198,10 +198,22 @@ font-size:18px;
 font-weight:500;
 }
 
-
+/* kite one font style */
 @font-face {
   font-family: 'Kite One';
   font-style: normal;
   font-weight: 400;
   src: local('Kite One'), local('KiteOne-Regular'), url(../fonts/kiteone.woff) format('woff');
+}
+
+/* post styles */
+.post_title{
+	height: 30px;
+	font-size: 24px;
+}
+.post_title_summary{
+	color: #999;
+	font-size: 14px;
+	/*border-bottom: 1px dashed #333;*/
+	margin-bottom: 30px;
 }

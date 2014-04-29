@@ -3,9 +3,19 @@ layout: default
 title: Posts
 ---
 <div class='cleaner'></div>
+<div class='cleaner'></div>
 <div id='page'>
+	<ul>
 	{% for post in site.posts %}
-<!-- 		<a target='_blank' href='{{ post.url }}'>{{ post.title }} -- {{ post.date }}</a><br> -->
-	{{ post }}
+		<li class='post_title'>
+			<a target='_blank' href='{{ post.url }}'>
+				{{ post.title }}
+			</a>
+		</li>
+		<li class='post_title_summary'>
+			<p>Date: {{ post.date|date: "%Y-%m-%d" }}</p>
+			{{ post.content | split:'<!--summary-->' |first }}
+		</li>
 	{% endfor %}
+	</ul>
 </div>

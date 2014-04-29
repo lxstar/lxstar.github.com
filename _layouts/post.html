@@ -1,11 +1,17 @@
 ---
 layout: default
 ---
-
 <div class='cleaner'></div>
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<div class='cleaner'></div>
 
-<div class="post">
-{{ content }}
+<div id='page'>
+	<h2>{{ page.title }}</h2>
+	<p class="meta">{{ page.date | date_to_string }}</p>
+
+	<div class="post">{{ content }}</div>
+
+	<div class='cleaner'></div>
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="{{ page.id }}" data-title="{{ page.title }}" data-url="{{ page.url }}"></div>
+	<!-- 多说评论框 end -->
 </div>
