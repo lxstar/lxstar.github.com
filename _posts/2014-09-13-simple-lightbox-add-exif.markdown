@@ -53,7 +53,7 @@ foreach ( $this->media_items as $key => $props ) {
 
 {% endhighlight %}
 
-再继续添加显示的地方 simple-lightbox/themes/layout.html 27-42行
+再继续添加显示的地方 simple-lightbox/themes/baseline/layout.html 27-42行
 
 添加 {{item.exif}}
 
