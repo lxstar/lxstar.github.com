@@ -78,7 +78,7 @@ foreach ( $this->media_items as $key => $props ) {
 
 这样就可以ok了，效果如下：
 
-![效果图]({{ site.url }}/static/images/home_pic.jpg)
+![效果图]({{ site.url }}/static/images/exif-add-example.jpg)
 
 ---
 最后吐槽一下，simple-lightbox的代码写的确实不错
