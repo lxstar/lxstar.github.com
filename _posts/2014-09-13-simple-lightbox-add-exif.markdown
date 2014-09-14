@@ -57,7 +57,7 @@ foreach ( $this->media_items as $key => $props ) {
 
 添加 {{item.exif}}
 
-{% highlight html %}
+{% highlight %}
 
 <div class="slb_data_content">
     <div class="slb_data_desc">
