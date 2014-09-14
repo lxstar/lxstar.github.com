@@ -55,26 +55,9 @@ foreach ( $this->media_items as $key => $props ) {
 
 再继续添加显示的地方 simple-lightbox/themes/baseline/layout.html 27-42行
 
-添加 {{item.exif}}
+添加 \{\{item.exif\}\}
 
-{% highlight %}
-
-<div class="slb_data_content">
-    <div class="slb_data_desc">
-        {{item.exif}}
-    </div>
-    <span class="slb_data_title">
-        {{item.title}}
-    </span>
-    <span class="slb_group_status">
-        {{ui.group_status}}
-    </span>
-    <div class="slb_data_desc">
-        {{item.description}}
-    </div>
-</div>
-
-{% endhighlight %}
+![效果图]({{ site.url }}/static/images/code_html_simple-lightbox.png)
 
 这样就可以ok了，效果如下：
 
